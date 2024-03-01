@@ -10,6 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies()); // Registering the automapper
+
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 
 var app = builder.Build();
