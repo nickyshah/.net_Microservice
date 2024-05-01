@@ -37,6 +37,10 @@ namespace PlatformService.Controllers
                 var result = _mapper.Map<PlatformReadDto>(platformItem);
                 return Ok(result);
             }
+            else
+            {
+                Console.WriteLine("Fuck Off");
+            }
             return NotFound();
         }
 
